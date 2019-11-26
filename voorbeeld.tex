@@ -1,0 +1,126 @@
+%==============================================================================
+% Voorbeeld gebruik documentklasse hogent-article
+%==============================================================================
+%
+% Compileren in TeXstudio:
+%
+% - Zorg dat Biber de bibliografie compileert (en niet Biblatex)
+%   Options > Configure > Build > Default Bibliography Tool: "txs:///biber"
+% - F5 om te compileren en het resultaat te bekijken.
+% - Als de bibliografie niet zichtbaar is, probeer dan F5 - F8 - F5
+%   Met F8 compileer je de bibliografie apart.
+%
+% Als je JabRef gebruikt voor het bijhouden van de bibliografie, zorg dan
+% dat je in ``biblatex''-modus opslaat: File > Switch to BibLaTeX mode.
+
+\documentclass{hogent-article}
+\bibliography{bibliografie}
+%\usepackage{lipsum} % Voor vultekst
+
+%------------------------------------------------------------------------------
+% Metadata over het artikel
+%------------------------------------------------------------------------------
+
+%---------- Titel & auteur ----------------------------------------------------
+
+% TODO: geef werktitel van je eigen voorstel op
+\PaperTitle{De invloed van een Business Manager op Agile projecten}
+% TODO: geef op welk soort artikel dit is
+% Dit is typisch de opdracht en het vak waarvoor dit artikel geschreven is, bv.
+% ``Verslag onderzoeksproject Onderzoekstechnieken 2018-2019''
+\PaperType{Verslag onderzoeksproject Analyse 2019-2020, Klas: 3D, Groep : 1}
+
+% TODO: vul je eigen naam in als auteur, geef ook je emailadres mee!
+\Authors{  Bram Vanoverbeke\textsuperscript{1}, 
+	       Stef Verlinde\textsuperscript{2},
+           Jordy De Tier\textsuperscript{3},
+           Joppe Minjauw\textsuperscript{4}
+} % Authors
+
+% TODO: vul de naam van je co-promotor in.
+% Als het hier gaat om een voorstel voor de bachelorproef, dan ben je hier
+% verplicht de naam van je co-promotor in te vullen. Zoniet, dan kan je het
+% leeg laten.
+\CoPromotor{}
+
+% Contactinfo: Geef hier de contactgegevens van elke auteur van het artikel (en
+% indien van toepassing ook van de co-promotor)
+\affiliation{
+	\textsuperscript{1} \href{mailto:bram.vanoverbeke@student.hogent.be}{bram.vanoverbeke@student.hogent.be}
+	\textsuperscript{2}
+	\href{mailto:stef.verlinde@student.hogent.be}{	stef.verlinde@student.hogent.be}
+}
+\affiliation{
+	\textsuperscript{3}
+	\href{mailto:jordy.detier@student.hogent.be}{jordy.detier@student.hogent.be}
+	\textsuperscript{4} \href{mailto:joppe.minjauw@student.hogent.be}{joppe.minjauw@student.hogent.be}
+}
+
+%---------- Abstract ----------------------------------------------------------
+
+\Abstract{Hier schrijf je de samenvatting van je artikel, als een doorlopende tekst van één paragraaf. Wat hier zeker in moet vermeld worden: \textbf{Context} (Waarom is dit werk belangrijk?); \textbf{Nood} (Waarom moet dit onderzocht worden?); \textbf{Taak} (Wat ga je (ongeveer) doen?); \textbf{Object} (Wat staat in dit document geschreven?); \textbf{Resultaat} (Wat verwacht je van je onderzoek?); \textbf{Conclusie} (Wat verwacht je van van de conclusies?); \textbf{Perspectief} (Wat zegt de toekomst voor dit werk?).
+
+Bij de sleutelwoorden geef je het onderzoeksdomein, samen met andere sleutelwoorden die je werk beschrijven.
+}
+
+%---------- Onderzoeksdomein en sleutelwoorden --------------------------------
+% TODO: Vul de sleutelwoorden aan.
+
+
+\Keywords{Onderzoeksdomein; Sleutelwoord1; Sleutelwoord2; Sleutelwoord3}
+\newcommand{\keywordname}{Sleutelwoorden} % Defines the keywords heading name
+
+%---------- Titel, inhoud -----------------------------------------------------
+
+\begin{document}
+
+\flushbottom % Makes all text pages the same height
+\maketitle % Print the title and abstract box
+\tableofcontents % Print the contents section
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%------------------------------------------------------------------------------
+% Hoofdtekst
+%------------------------------------------------------------------------------
+
+\section{Inleiding}
+
+
+Agile werken is een alom gekend begrip binnen de bedrijfswereld en is tegenwoordig bij de meeste bedrijfsprocessen niet meer weg te denken. De nood aan digitalisering zit daar zeker voor een stuk tussen, maar wat houdt agile werken precies in en, specifieker, wat is de rol van een business analist?
+Aan de hand van eerder gepubliceerde papers en interviews met business analisten die ervaring hebben met het agile proces, wordt onderzocht waar de business analist voor in staat en of deze rol nog steeds relevant is binnen hedendaagse bedrijven.
+
+\section{Overzicht literatuur}
+
+% Refereren naar de literatuur kan met:
+% \autocite{BIBTEXKEY} -> (Auteur, jaartal)
+% \textcite{BIBTEXKEY} -> Auteur (jaartal)
+Uit het onderzoek 'Agile Bi - The Future of Bi'\autocite{Muntean2013} blijkt dat agile werken zeer goed werkt wanneer requirements zeer veel veranderen en dat agile werken ook voor een vlottere workflow zorgt.
+\autocite{LeeYong2009}
+
+\section{Vragen voor het interview}
+Voor het opstellen van dit onderzoek zochten we ook naar enkele bedrijven en personen om ons wat meer informatie te geven. Zo stelden we enkele vragen die ons wat meer duidelijkheid zouden moeten brengen. Als eerste vraag stelden we : \textit{"Wat is de taak van een business-analist?"}. Deze vraag vonden we belangrijk om ons een concreet beeld te geven van de functie als business-analist, zodat er geen verwarring onstaat. De tweede vraag luidde: \textit{"Is business-analyse in agile projecten nog altijd een skill of een rol?"}. Met deze vraag probeerden we te weten te komen of business-analyse in agile projecten wel degelijk top priority is en dus een rol is of eerder een nice to have skill is. De derde vraag : \textit{Hoe verloopt het agile proces binnen jullie bedrijf?} werd gesteld om te kijken hoe agile werken nu eigenlijk toegepast wordt in het bedrijf. De volgende vraag : \textit{Wat vindt u voor en nadelen van agile werken?} was belangrijk om zo ook de mindere kanten van agile werken te weten te komen. Als vijfde vraag werd er gevraagd: \textit{Waarom kiest u voor agile?} om zo te kijken wat de beargumentering was en waarom er niet voor een andere methode werd gegaan. Als laatste werd er gevraagd : \textit{Hoelang duurt een gemiddelde sprint bij jullie?} om een beeld te hebben hoe men met tijd omgaat en hoelang een sprint duurt en hoe deze gelijkloopt of verschilt met bijvoorbeeld een sprint in de opleiding.
+
+
+
+\section{Analyse van het interview}
+\textbf{HIER MOET EERSTE BEDRIJF KOMEN !!!!!!}
+Als tweede bedrijf contacteerden we Agile Scrum Group, een Nederlands bedrijf dat instaat voor het introduceren en implementeren van het agile werken in andere bedrijven. Wegens lange afstand werd de communicatie gedaan via e-mail, wat helemaal niet voor hinder zorgde. Agile Scrum Group was zeer behulpzaam en bezorgde veel nuttige informatie. Zo wisten ze te vertellen dat MIT een recent onderzoek heeft gedaan naar de voordelen van agile werken en de impact ervan op een bedrijf.
+Uit de resultaten van dit onderzoek blijkt dat bedrijven die het agile proces toepassen veel klantgerichter en innovatiever voor de dag komen, wat leidt tot een snellere groei van dit bedrijf van ongeveer 37\% en een significant hogere winst van ongeveer 30\%. 
+Verder is ook vastgesteld dat agile werken niet alleen een grote impact heeft op het bedrijf zelf, maar ook op het personeel, die zich schijnbaar veel gelukkiger voelen, onder meer door de duidelijkheid en structuur dat agile werken met zich meebrengt.
+
+\section{Conclusie}
+
+
+
+%------------------------------------------------------------------------------
+% Referentielijst
+%------------------------------------------------------------------------------
+% TODO: de gerefereerde werken moeten in BibTeX-bestand ``bibliografie.bib''
+% voorkomen. Gebruik JabRef om je bibliografie bij te houden en vergeet niet
+% om compatibiliteit met Biber/BibLaTeX aan te zetten (File > Switch to
+% BibLaTeX mode)
+
+\phantomsection
+\printbibliography
+
+\end{document}
